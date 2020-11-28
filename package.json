@@ -25,5 +25,8 @@
   "homepage": "https://github.com/heiym/rapi#readme",
   "dependencies": {
     "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "rollup": "^2.33.3"
   }
 }
