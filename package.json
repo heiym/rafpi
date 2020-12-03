@@ -4,7 +4,14 @@
   "description": "ran fantasy client",
   "main": "src/index.js",
   "type": "module",
+  "exports": {
+    ".": {
+      "import": "dist/index.cjs",
+      "require": "src/index.js"
+    }
+  },
   "scripts": {
+    "build": "rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
