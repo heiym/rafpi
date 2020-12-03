@@ -2,13 +2,15 @@
   "name": "rapi",
   "version": "0.0.1",
   "description": "ran fantasy client",
-  "main": "src/index.js",
+  "main": "dist/index.cjs",
+  "module": "src/index.js",
   "type": "module",
   "exports": {
     ".": {
       "import": "dist/index.cjs",
       "require": "src/index.js"
-    }
+    },
+    "./package.json": "./package.json"
   },
   "scripts": {
     "build": "rollup -c",
