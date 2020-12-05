@@ -12,6 +12,10 @@
     },
     "./package.json": "./package.json"
   },
+  "files": {
+    "src",
+    "dist"
+  },
   "scripts": {
     "build": "rollup -c",
     "prepare": "npm run build",
