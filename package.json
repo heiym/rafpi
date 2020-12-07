@@ -7,15 +7,15 @@
   "type": "module",
   "exports": {
     ".": {
-      "import": "dist/index.cjs",
-      "require": "src/index.js"
+      "import": "./src/index.js",
+      "require": "./dist/index.cjs"
     },
     "./package.json": "./package.json"
   },
-  "files": {
+  "files": [ 
     "src",
     "dist"
-  },
+  ],
   "scripts": {
     "build": "rollup -c",
     "prepare": "npm run build",
