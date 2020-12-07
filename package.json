@@ -1,5 +1,5 @@
 {
-  "name": "rapi",
+  "name": "rafpi",
   "version": "0.0.1",
   "description": "ran fantasy client",
   "main": "dist/index.cjs",
@@ -23,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/heiym/rapi.git"
+    "url": "git+https://github.com/heiym/rafpi.git"
   },
   "keywords": [
     "ran",
@@ -34,9 +34,9 @@
   "author": "si",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/heiym/rapi/issues"
+    "url": "https://github.com/heiym/rafpi/issues"
   },
-  "homepage": "https://github.com/heiym/rapi#readme",
+  "homepage": "https://github.com/heiym/rafpi#readme",
   "dependencies": {
     "node-fetch": "^2.6.1"
   },

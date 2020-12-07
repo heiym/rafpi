@@ -3,7 +3,7 @@ import Teams from './teams.js';
 import Nfl from './nfl.js';
 
 
-export default class RanFantasy {
+export default class Rapi {
   endpoints = {
     'league': League,
     'teams': Teams,
