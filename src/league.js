@@ -14,19 +14,23 @@ export default class League extends NflFantasyApi {
    * @param {string} order order by element
    * @param {string} order_dir order direction
    */
-  async leagueScores(leagueId, round = 1, order = 'overall_rank', order_dir = 'asc')  {
+  async leagueScores(leagueId, round, order = 'overall_rank', order_dir = 'asc')  {
     if(!leagueId || !(leagueId > 0)) {
       throw new Error('Missing or invalid LEAGUE_ID. Please provide.');
     }
-
-    const response = await this.get('/fantasy_league/ladder', { 
+    
+    const parameters = {
       id: leagueId,
-      round: round,
       sid: this.sessionId,
       order: order,
       order_dir: order_dir,
-    });
+    }
 
+    if(round > 0) {
+      parameters = { ...parameters, round };
+    }
+
+    const response = await this.get('/fantasy_league/ladder', parameters);
     return response.json();
   }
 
